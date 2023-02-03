@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_facebook_auth\\intermediates\\merged_res\\release\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\cc8f388a67be26b16d3290381a4f9b5b\\transformed\\appcompat-1.1.0\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_facebook_auth\\intermediates\\merged_res\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_facebook_auth\\intermediates\\merged_res\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\cc8f388a67be26b16d3290381a4f9b5b\\transformed\\appcompat-1.1.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_facebook_auth\\intermediates\\merged_res\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\cc8f388a67be26b16d3290381a4f9b5b\\transformed\\appcompat-1.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_facebook_auth\\intermediates\\merged_res\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\cc8f388a67be26b16d3290381a4f9b5b\\transformed\\appcompat-1.1.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_facebook_auth\\intermediates\\merged_res\\release\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\cc8f388a67be26b16d3290381a4f9b5b\\transformed\\appcompat-1.1.0\\res\\drawable-v21\\abc_list_divider_material.xml"
+    }
+]

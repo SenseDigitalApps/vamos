@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_fade_exit.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1ff160965c4ae58193780059cd2e2ee3\\transformed\\fragment-1.3.6\\res\\animator\\fragment_fade_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_open_exit.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1ff160965c4ae58193780059cd2e2ee3\\transformed\\fragment-1.3.6\\res\\animator\\fragment_open_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_fade_enter.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1ff160965c4ae58193780059cd2e2ee3\\transformed\\fragment-1.3.6\\res\\animator\\fragment_fade_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_close_exit.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1ff160965c4ae58193780059cd2e2ee3\\transformed\\fragment-1.3.6\\res\\animator\\fragment_close_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_open_enter.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1ff160965c4ae58193780059cd2e2ee3\\transformed\\fragment-1.3.6\\res\\animator\\fragment_open_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_close_enter.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1ff160965c4ae58193780059cd2e2ee3\\transformed\\fragment-1.3.6\\res\\animator\\fragment_close_enter.xml"
+    }
+]

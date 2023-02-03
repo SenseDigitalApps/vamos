@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">671750483834-a70dv84115fgn7hs1k6umbj7sm89ekmi.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">671750483834</string>
+    <string name="google_api_key" translatable="false">AIzaSyDHoGwLpbI3sc2lL6X02N_R71nVUlK3WZ4</string>
+    <string name="google_app_id" translatable="false">1:671750483834:android:9dd676bd66b978fbd330c3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHoGwLpbI3sc2lL6X02N_R71nVUlK3WZ4</string>
+    <string name="google_storage_bucket" translatable="false">vamos-38fa3.appspot.com</string>
+    <string name="project_id" translatable="false">vamos-38fa3</string>
+</resources>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\anim-v21\\mtrl_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\anim-v21\\mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\anim-v21\\fragment_fast_out_extra_slow_in.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\74e982e2a1237ac724567b914861c77d\\transformed\\fragment-1.2.5\\res\\anim-v21\\fragment_fast_out_extra_slow_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\anim-v21\\mtrl_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\anim-v21\\mtrl_bottom_sheet_slide_out.xml"
+    }
+]

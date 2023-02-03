@@ -1,0 +1,1757 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sensedigital.vamos"
+4    android:versionCode="3000"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:6:5-81
+13-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:7:5-79
+14-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:7:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:8:5-68
+15-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:9:5-77
+16-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:9:22-74
+17
+18    <!-- Use for showing notification -->
+19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+19-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:12:5-76
+19-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:12:22-74
+20
+21    <!-- Use for take photo and photo gallery feature -->
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:16:5-65
+22-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:16:22-62
+23    <uses-permission
+23-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:17:5-80
+24        android:name="android.permission.READ_EXTERNAL_STORAGE"
+24-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:17:22-77
+25        android:maxSdkVersion="32" />
+25-->[:photo_manager] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\photo_manager\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-35
+26
+27    <!-- Use for printer POS feature -->
+28    <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+29    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> -->
+30
+31
+32    <!-- Use for SmartChat feature -->
+33    <queries>
+33-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:24:5-67:15
+34        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+34-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:25:9-89
+34-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:25:19-86
+35
+36        <intent>
+36-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:27:9-30:18
+37            <action android:name="android.intent.action.VIEW" />
+37-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+37-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+38
+39            <data android:scheme="https" />
+39-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+40        </intent>
+41        <intent>
+41-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:31:9-34:18
+42            <action android:name="android.intent.action.DIAL" />
+42-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:32:13-65
+42-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:32:21-62
+43
+44            <data android:scheme="tel" />
+44-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+45        </intent>
+46        <intent>
+46-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:35:9-38:18
+47            <action android:name="android.intent.action.SENDTO" />
+47-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:36:13-67
+47-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:36:21-64
+48
+49            <data android:scheme="smsto" />
+49-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+50        </intent>
+51        <intent>
+51-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:39:9-42:18
+52            <action android:name="android.intent.action.SEND" />
+52-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:40:13-65
+52-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:40:21-62
+53
+54            <data android:mimeType="*/*" />
+54-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:41:19-41
+55        </intent>
+56        <intent>
+56-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:43:9-46:18
+57            <action android:name="android.intent.action.VIEW" />
+57-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+57-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+58
+59            <data android:scheme="whatsapp" />
+59-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+60        </intent>
+61        <intent>
+61-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:47:9-50:18
+62            <action android:name="android.intent.action.VIEW" />
+62-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+62-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+63
+64            <data android:scheme="instagram" />
+64-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+65        </intent>
+66        <intent>
+66-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:51:9-54:18
+67            <action android:name="android.intent.action.VIEW" />
+67-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+67-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+68
+69            <data android:scheme="instagram-stories" />
+69-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+70        </intent>
+71        <intent>
+71-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:55:9-58:18
+72            <action android:name="android.intent.action.VIEW" />
+72-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+72-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+73
+74            <data android:scheme="twitter" />
+74-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+75        </intent>
+76        <intent>
+76-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:59:9-62:18
+77            <action android:name="android.intent.action.VIEW" />
+77-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+77-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+78
+79            <data android:scheme="fb" />
+79-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+80        </intent>
+81        <intent>
+81-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:63:9-66:18
+82            <action android:name="android.intent.action.VIEW" />
+82-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+82-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+83
+84            <data android:scheme="tg" />
+84-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+85        </intent>
+86        <intent>
+86-->[:file_picker] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:18
+87            <action android:name="android.intent.action.GET_CONTENT" />
+87-->[:file_picker] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+87-->[:file_picker] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:21-69
+88
+89            <data android:mimeType="*/*" />
+89-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:41:19-41
+90        </intent>
+91        <intent>
+91-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:18
+92            <action android:name="android.support.customtabs.action.CustomTabsService" />
+92-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-90
+92-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:11:21-87
+93        </intent>
+94        <intent>
+94-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:13:9-19:18
+95            <action android:name="android.intent.action.VIEW" />
+95-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+95-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+96
+97            <data
+98                android:mimeType="*/*"
+98-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:41:19-41
+99                android:scheme="*" />
+99-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+100        </intent>
+101        <intent>
+101-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:20:9-29:18
+102            <action android:name="android.intent.action.VIEW" />
+102-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+102-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+103
+104            <category android:name="android.intent.category.BROWSABLE" />
+104-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+104-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+105
+106            <data
+107                android:host="pay"
+107-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:115:21-52
+108                android:mimeType="*/*"
+108-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:41:19-41
+109                android:scheme="upi" />
+109-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+110        </intent>
+111        <intent>
+111-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:30:9-32:18
+112            <action android:name="android.intent.action.MAIN" />
+112-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:96:17-69
+112-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:96:25-66
+113        </intent>
+114        <intent>
+114-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:38:9-40:18
+115            <action android:name="rzp.device_token.share" />
+115-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:39:13-61
+115-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:39:21-58
+116        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+117        <package android:name="com.google.android.apps.maps" /> <!-- Specific apps you interact with, eg: -->
+117-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+117-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+118        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE" />
+118-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:12:9-88
+118-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:12:18-85
+119        <package android:name="com.facebook.katana" /> <!-- For browser content -->
+119-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:30:9-55
+119-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:30:18-52
+120        <intent>
+120-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:31:9-37:18
+121            <action android:name="android.intent.action.VIEW" />
+121-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+121-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+122
+123            <category android:name="android.intent.category.BROWSABLE" />
+123-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+123-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+124
+125            <data android:scheme="https" />
+125-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+126        </intent>
+127    </queries>
+128
+129    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+129-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+129-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-78
+130    <uses-permission android:name="android.permission.VIBRATE" />
+130-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-66
+130-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-63
+131    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+131-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-81
+131-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-78
+132    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+132-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-79
+132-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-76
+133    <permission
+133-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:7:5-9:47
+134        android:name="com.sensedigital.vamos.permission.C2D_MESSAGE"
+134-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:8:9-63
+135        android:protectionLevel="signature" />
+135-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:9:9-44
+136
+137    <uses-permission android:name="com.sensedigital.vamos.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+137-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:11:5-79
+137-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:11:22-76
+138    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- START: ShortcutBadger -->
+138-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:18:5-82
+138-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:18:22-79
+139    <!-- Samsung -->
+140    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+140-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:32:5-86
+140-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:32:22-83
+141    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+141-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:33:5-87
+141-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:33:22-84
+142    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+142-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:34:5-81
+142-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:34:22-78
+143    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+143-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:35:5-83
+143-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:35:22-80
+144    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+144-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:36:5-88
+144-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:36:22-85
+145    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+145-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:37:5-92
+145-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:37:22-89
+146    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+146-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:38:5-84
+146-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:38:22-81
+147    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+147-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:39:5-83
+147-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:39:22-80
+148    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+148-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:40:5-91
+148-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:40:22-88
+149    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+149-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:41:5-92
+149-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:41:22-89
+150    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+150-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:42:5-93
+150-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:42:22-90
+151    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+151-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:43:5-73
+151-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:43:22-70
+152    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+152-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:44:5-82
+152-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:44:22-79
+153    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+153-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:45:5-83
+153-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:45:22-80
+154    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+154-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:46:5-88
+154-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:46:22-85
+155    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+155-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:47:5-89
+155-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:47:22-86
+156
+157    <uses-feature
+157-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+158        android:glEsVersion="0x00020000"
+158-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+159        android:required="true" />
+159-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+160
+161    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+161-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:10:5-75
+161-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:10:22-72
+162    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+162-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\b2c2b099fa6346361f560ddec2e05a39\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+162-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\b2c2b099fa6346361f560ddec2e05a39\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+163    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+163-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+163-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+164    <uses-feature
+164-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+165        android:name="android.hardware.camera"
+165-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+166        android:required="false" />
+166-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+167    <uses-feature
+167-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+168        android:name="android.hardware.camera.front"
+168-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+169        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+169-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+170    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+171    <uses-feature
+171-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+172        android:name="android.hardware.camera.autofocus"
+172-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+173        android:required="false" />
+173-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+174    <uses-feature
+174-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+175        android:name="android.hardware.camera.flash"
+175-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+176        android:required="false" />
+176-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+177    <uses-feature
+177-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+178        android:name="android.hardware.screen.landscape"
+178-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+179        android:required="false" />
+179-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+180    <uses-feature
+180-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+181        android:name="android.hardware.wifi"
+181-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+182        android:required="false" />
+182-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+183
+184    <application
+185        android:name="android.app.Application"
+185-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:70:9-42
+186        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+186-->[androidx.core:core:1.8.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\90b3a00dd5a4ef6bca7971e580b4b2d0\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+187        android:fullBackupContent="@xml/backup_rules"
+187-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:74:9-54
+188        android:icon="@mipmap/launcher_icon"
+188-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:71:9-45
+189        android:label="Vamos"
+189-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:72:9-35
+190        android:requestLegacyExternalStorage="true"
+190-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:73:9-52
+191        android:supportsRtl="true"
+191-->[com.facebook.android:facebook-login:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\90ca5272af3eaf081c120c071dbbe675\transformed\jetified-facebook-login-15.0.2\AndroidManifest.xml:28:18-44
+192        android:usesCleartextTraffic="true" >
+192-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:75:9-44
+193        <activity
+193-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:78:9-130:20
+194            android:name="com.sensedigital.vamos.MainActivity"
+194-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:79:13-41
+195            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+195-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:80:13-163
+196            android:exported="true"
+196-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:81:13-36
+197            android:hardwareAccelerated="true"
+197-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:82:13-47
+198            android:launchMode="singleTop"
+198-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:83:13-43
+199            android:theme="@style/LaunchTheme"
+199-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:84:13-47
+200            android:windowSoftInputMode="adjustResize" >
+200-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:85:13-55
+201
+202            <!--
+203                 Specifies an Android theme to apply to this Activity as soon as
+204                 the Android process has started. This theme is visible to the user
+205                 while the Flutter UI initializes. After that, this theme continues
+206                 to determine the Window background behind the Flutter UI.
+207            -->
+208            <meta-data
+208-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:91:13-93:57
+209                android:name="io.flutter.embedding.android.NormalTheme"
+209-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:92:17-72
+210                android:resource="@style/NormalTheme" />
+210-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:93:17-54
+211
+212            <intent-filter>
+212-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:95:13-98:29
+213                <action android:name="android.intent.action.MAIN" />
+213-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:96:17-69
+213-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:96:25-66
+214
+215                <category android:name="android.intent.category.LAUNCHER" />
+215-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:97:17-77
+215-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:97:27-74
+216            </intent-filter>
+217            <intent-filter>
+217-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:99:13-102:29
+218                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+218-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:100:17-69
+218-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:100:25-66
+219
+220                <category android:name="android.intent.category.DEFAULT" />
+220-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:17-76
+220-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:27-73
+221            </intent-filter>
+222
+223            <meta-data
+224                android:name="default-url"
+224-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:105:17-43
+225                android:value="https://vamos.com.ec" />
+225-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:106:17-46
+226
+227            <intent-filter android:autoVerify="true" >
+227-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:108:13-118:29
+227-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:108:28-53
+228                <action android:name="android.intent.action.VIEW" />
+228-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+228-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+229
+230                <category android:name="android.intent.category.DEFAULT" />
+230-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:17-76
+230-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:27-73
+231                <category android:name="android.intent.category.BROWSABLE" />
+231-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+231-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+232
+233                <data
+234                    android:host="inspireui.com"
+234-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:115:21-52
+235                    android:scheme="https" />
+235-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+236                <data android:scheme="http" />
+236-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+237            </intent-filter>
+238            <intent-filter>
+238-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:120:13-129:29
+239                <action android:name="android.intent.action.VIEW" />
+239-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+239-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+240
+241                <category android:name="android.intent.category.DEFAULT" />
+241-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:17-76
+241-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:27-73
+242                <category android:name="android.intent.category.BROWSABLE" />
+242-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+242-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+243
+244                <data
+245                    android:host="inspireui.com"
+245-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:115:21-52
+246                    android:scheme="fluxstore" />
+246-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+247            </intent-filter>
+248        </activity>
+249
+250        <meta-data
+250-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:132:9-134:36
+251            android:name="com.google.android.gms.wallet.api.enabled"
+251-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:133:13-69
+252            android:value="true" />
+252-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:134:13-33
+253        <meta-data
+253-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:136:9-138:71
+254            android:name="com.google.firebase.messaging.default_notification_channel_id"
+254-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:137:13-89
+255            android:value="@string/default_notification_channel_id" />
+255-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:138:13-68
+256        <meta-data
+256-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:140:9-142:49
+257            android:name="com.google.firebase.messaging.default_notification_icon"
+257-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:141:13-83
+258            android:resource="@drawable/logo" />
+258-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:142:13-46
+259        <!--
+260             Set color used with incoming notification messages. This is used when no color is set for the incoming
+261            notification message. See README(https://goo.gl/6BKBk7) for more.
+262        -->
+263        <meta-data
+263-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:145:9-147:51
+264            android:name="com.google.firebase.messaging.default_notification_color"
+264-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:146:13-84
+265            android:resource="@color/notiColor" />
+265-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:147:13-48
+266        <!-- Google map and Admod setup -->
+267        <meta-data
+268            android:name="com.google.android.geo.API_KEY"
+268-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:150:13-58
+269            android:value="AIzaSyDn9k7vvdxbJgDgjpCFRXJOdLilbGfVlNA" />
+269-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:151:13-51
+270        <meta-data
+271            android:name="com.google.android.gms.ads.APPLICATION_ID"
+271-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:153:13-69
+272            android:value="ca-app-pub-7432665165146018~2664444130" />
+272-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:154:13-49
+273
+274        <!-- Facebook Login configuration -->
+275        <meta-data
+275-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:157:9-159:53
+276            android:name="com.facebook.sdk.ApplicationId"
+276-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:158:13-58
+277            android:value="@string/facebookAppId" />
+277-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:159:13-50
+278        <meta-data
+279            android:name="com.facebook.sdk.ClientToken"
+279-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:162:13-56
+280            android:value="9def0493cb40104fa311ee9e1086d264" />
+280-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:163:13-51
+281        <meta-data
+282            android:name="com.inspireui.ENVATO_PURCHASE_CODE"
+282-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:166:17-66
+283            android:value="ebdbd98b-2f7c-4843-aa75-dc48f3076a45" />
+283-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:167:17-54
+284
+285        <!-- Enable to support Audio Feature -->
+286        <!-- <service -->
+287        <!-- android:name="com.ryanheise.audioservice.AudioService" -->
+288        <!-- android:exported="true"> -->
+289        <!-- <intent-filter> -->
+290        <!-- <action android:name="android.media.browse.MediaBrowserService" /> -->
+291        <!-- </intent-filter> -->
+292        <!-- </service> -->
+293
+294
+295        <!-- <receiver -->
+296        <!-- android:name="com.ryanheise.audioservice.MediaButtonReceiver" -->
+297        <!-- android:exported="true"> -->
+298        <!-- <intent-filter> -->
+299        <!-- <action android:name="android.intent.action.MEDIA_BUTTON" /> -->
+300        <!-- </intent-filter> -->
+301        <!-- </receiver> -->
+302
+303
+304        <!--
+305             Don't delete the meta-data below.
+306             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+307        -->
+308        <meta-data
+308-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:188:9-190:33
+309            android:name="flutterEmbedding"
+309-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:189:13-44
+310            android:value="2" />
+310-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:190:13-30
+311
+312        <service
+312-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-19:72
+313            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+313-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-107
+314            android:exported="false"
+314-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+315            android:permission="android.permission.BIND_JOB_SERVICE" />
+315-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-69
+316        <service
+316-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-26:19
+317            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+317-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-97
+318            android:exported="false" >
+318-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+319            <intent-filter>
+319-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+320                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+320-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+320-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+321            </intent-filter>
+322        </service>
+323
+324        <receiver
+324-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-35:20
+325            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+325-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-98
+326            android:exported="true"
+326-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-36
+327            android:permission="com.google.android.c2dm.permission.SEND" >
+327-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-73
+328            <intent-filter>
+328-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+329                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+329-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+329-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+330            </intent-filter>
+331        </receiver>
+332
+333        <service
+333-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:37:9-41:19
+334            android:name="com.google.firebase.components.ComponentDiscoveryService"
+334-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:37:18-89
+335            android:directBootAware="true"
+335-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+336            android:exported="false" >
+336-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\10e44d1b6a0433ddf059601f97a9bfee\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:18:13-37
+337            <meta-data
+337-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-40:85
+338                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+338-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:39:17-128
+339                android:value="com.google.firebase.components.ComponentRegistrar" />
+339-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:40:17-82
+340            <meta-data
+340-->[:cloud_firestore] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+341                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+341-->[:cloud_firestore] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
+342                android:value="com.google.firebase.components.ComponentRegistrar" />
+342-->[:cloud_firestore] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+343            <meta-data
+343-->[:firebase_dynamic_links] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:85
+344                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+344-->[:firebase_dynamic_links] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-131
+345                android:value="com.google.firebase.components.ComponentRegistrar" />
+345-->[:firebase_dynamic_links] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_dynamic_links\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-82
+346            <meta-data
+346-->[:firebase_analytics] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:85
+347                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+347-->[:firebase_analytics] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-128
+348                android:value="com.google.firebase.components.ComponentRegistrar" />
+348-->[:firebase_analytics] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_analytics\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-82
+349            <meta-data
+349-->[:firebase_auth] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+350                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+350-->[:firebase_auth] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+351                android:value="com.google.firebase.components.ComponentRegistrar" />
+351-->[:firebase_auth] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+352            <meta-data
+352-->[:firebase_remote_config] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_remote_config\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+353                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firebaseremoteconfig.FlutterFirebaseAppRegistrar"
+353-->[:firebase_remote_config] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_remote_config\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-139
+354                android:value="com.google.firebase.components.ComponentRegistrar" />
+354-->[:firebase_remote_config] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_remote_config\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+355            <meta-data
+355-->[:firebase_core] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+356                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+356-->[:firebase_core] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+357                android:value="com.google.firebase.components.ComponentRegistrar" />
+357-->[:firebase_core] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+358            <meta-data
+358-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\10e44d1b6a0433ddf059601f97a9bfee\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:19:13-21:85
+359                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+359-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\10e44d1b6a0433ddf059601f97a9bfee\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:20:17-111
+360                android:value="com.google.firebase.components.ComponentRegistrar" />
+360-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\10e44d1b6a0433ddf059601f97a9bfee\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:21:17-82
+361            <meta-data
+361-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:55:13-57:85
+362                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+362-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:56:17-119
+363                android:value="com.google.firebase.components.ComponentRegistrar" />
+363-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:57:17-82
+364            <meta-data
+364-->[com.google.firebase:firebase-dynamic-links:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\d06c876d8f578d62f4d9a2d6b2649910\transformed\jetified-firebase-dynamic-links-21.1.0\AndroidManifest.xml:26:13-28:85
+365                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+365-->[com.google.firebase:firebase-dynamic-links:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\d06c876d8f578d62f4d9a2d6b2649910\transformed\jetified-firebase-dynamic-links-21.1.0\AndroidManifest.xml:27:17-133
+366                android:value="com.google.firebase.components.ComponentRegistrar" />
+366-->[com.google.firebase:firebase-dynamic-links:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\d06c876d8f578d62f4d9a2d6b2649910\transformed\jetified-firebase-dynamic-links-21.1.0\AndroidManifest.xml:28:17-82
+367            <meta-data
+367-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+368                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+368-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+369                android:value="com.google.firebase.components.ComponentRegistrar" />
+369-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+370            <meta-data
+370-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\58fe390db25dffac2a147a95367510b0\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+371                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+371-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\58fe390db25dffac2a147a95367510b0\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+372                android:value="com.google.firebase.components.ComponentRegistrar" />
+372-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\58fe390db25dffac2a147a95367510b0\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+373            <meta-data
+373-->[com.google.firebase:firebase-config:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e413350a983a1ec40234ab43a39104f1\transformed\jetified-firebase-config-21.2.0\AndroidManifest.xml:31:13-33:85
+374                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+374-->[com.google.firebase:firebase-config:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e413350a983a1ec40234ab43a39104f1\transformed\jetified-firebase-config-21.2.0\AndroidManifest.xml:32:17-117
+375                android:value="com.google.firebase.components.ComponentRegistrar" />
+375-->[com.google.firebase:firebase-config:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e413350a983a1ec40234ab43a39104f1\transformed\jetified-firebase-config-21.2.0\AndroidManifest.xml:33:17-82
+376            <meta-data
+376-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\b2c2b099fa6346361f560ddec2e05a39\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+377                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+377-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\b2c2b099fa6346361f560ddec2e05a39\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+378                android:value="com.google.firebase.components.ComponentRegistrar" />
+378-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\b2c2b099fa6346361f560ddec2e05a39\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+379            <meta-data
+379-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\107ba4480f2fac4d821ba5c55d1761e9\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+380                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+380-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\107ba4480f2fac4d821ba5c55d1761e9\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+381                android:value="com.google.firebase.components.ComponentRegistrar" />
+381-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\107ba4480f2fac4d821ba5c55d1761e9\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+382            <meta-data
+382-->[com.google.firebase:firebase-abt:21.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1f30975ae4e9dbca8bdad55e22dee7a4\transformed\jetified-firebase-abt-21.0.2\AndroidManifest.xml:13:13-15:85
+383                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+383-->[com.google.firebase:firebase-abt:21.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1f30975ae4e9dbca8bdad55e22dee7a4\transformed\jetified-firebase-abt-21.0.2\AndroidManifest.xml:14:17-109
+384                android:value="com.google.firebase.components.ComponentRegistrar" />
+384-->[com.google.firebase:firebase-abt:21.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1f30975ae4e9dbca8bdad55e22dee7a4\transformed\jetified-firebase-abt-21.0.2\AndroidManifest.xml:15:17-82
+385            <meta-data
+385-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\282b058d16057a36a18aef6be3b5d926\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+386                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+386-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\282b058d16057a36a18aef6be3b5d926\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+387                android:value="com.google.firebase.components.ComponentRegistrar" />
+387-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\282b058d16057a36a18aef6be3b5d926\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+388        </service>
+389
+390        <provider
+390-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:43:9-47:38
+391            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+391-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-102
+392            android:authorities="com.sensedigital.vamos.flutterfirebasemessaginginitprovider"
+392-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-88
+393            android:exported="false"
+393-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-37
+394            android:initOrder="99" />
+394-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-35
+395
+396        <receiver
+396-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-18:40
+397            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+397-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-91
+398            android:exported="false" />
+398-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+399        <receiver
+399-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-21:40
+400            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+400-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-97
+401            android:exported="false" />
+401-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+402        <receiver
+402-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-31:20
+403            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+403-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-101
+404            android:exported="false" >
+404-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+405            <intent-filter>
+405-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-30:29
+406                <action android:name="android.intent.action.BOOT_COMPLETED" />
+406-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-79
+406-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:25-76
+407                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+407-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-84
+407-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-81
+408                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+408-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:17-82
+408-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:25-79
+409                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+409-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-82
+409-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:25-79
+410            </intent-filter>
+411        </receiver>
+412
+413        <activity
+413-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-20:47
+414            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+414-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-104
+415            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+415-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-137
+416            android:exported="false"
+416-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-37
+417            android:theme="@style/AppTheme" />
+417-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-44
+418        <activity
+418-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-24:55
+419            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+419-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-112
+420            android:exported="false"
+420-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-37
+421            android:theme="@style/ThemeTransparent" />
+421-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-52
+422        <activity
+422-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-28:55
+423            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+423-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-106
+424            android:exported="false"
+424-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-37
+425            android:theme="@style/ThemeTransparent" />
+425-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-52
+426        <activity
+426-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:29:9-33:55
+427            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+427-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-126
+428            android:exported="false"
+428-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-37
+429            android:launchMode="singleInstance"
+429-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-48
+430            android:theme="@style/ThemeTransparent" />
+430-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:33:13-52
+431        <activity
+431-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:34:9-38:55
+432            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+432-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:35:13-120
+433            android:exported="false"
+433-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:36:13-37
+434            android:launchMode="singleInstance"
+434-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:37:13-48
+435            android:theme="@style/ThemeTransparent" />
+435-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-52
+436
+437        <receiver
+437-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:40:9-43:40
+438            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+438-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-111
+439            android:enabled="true"
+439-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-35
+440            android:exported="false" />
+440-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-37
+441
+442        <meta-data
+442-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:45:9-47:36
+443            android:name="io.flutter.embedded_views_preview"
+443-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-61
+444            android:value="true" />
+444-->[:flutter_inappwebview] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-33
+445
+446        <provider
+446-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+447            android:name="io.flutter.plugins.share.ShareFileProvider"
+447-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-70
+448            android:authorities="com.sensedigital.vamos.flutter.share_provider"
+448-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-74
+449            android:exported="false"
+449-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+450            android:grantUriPermissions="true" >
+450-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+451            <meta-data
+451-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:68
+452                android:name="android.support.FILE_PROVIDER_PATHS"
+452-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+453                android:resource="@xml/flutter_share_file_paths" />
+453-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-65
+454        </provider>
+455        <provider
+455-->[:image_picker_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+456            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+456-->[:image_picker_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-82
+457            android:authorities="com.sensedigital.vamos.flutter.image_provider"
+457-->[:image_picker_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-74
+458            android:exported="false"
+458-->[:image_picker_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+459            android:grantUriPermissions="true" >
+459-->[:image_picker_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+460            <meta-data
+460-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:68
+461                android:name="android.support.FILE_PROVIDER_PATHS"
+461-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+462                android:resource="@xml/flutter_image_picker_file_paths" />
+462-->[:share] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\share\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-65
+463        </provider>
+464
+465        <activity
+465-->[:flutter_paystack] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_paystack\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:54
+466            android:name="co.paystack.flutterpaystack.AuthActivity"
+466-->[:flutter_paystack] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_paystack\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-68
+467            android:theme="@style/Paystack.Dialog" />
+467-->[:flutter_paystack] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_paystack\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-51
+468        <activity
+468-->[:url_launcher_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+469            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+469-->[:url_launcher_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+470            android:exported="false"
+470-->[:url_launcher_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+471            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+471-->[:url_launcher_android] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+472
+473        <service
+473-->[:location] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-17:56
+474            android:name="com.lyokone.location.FlutterLocationService"
+474-->[:location] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-71
+475            android:enabled="true"
+475-->[:location] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-35
+476            android:exported="false"
+476-->[:location] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-37
+477            android:foregroundServiceType="location" />
+477-->[:location] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-53
+478
+479        <uses-library
+479-->[androidx.window:window:1.0.0-beta04] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\374edff404496382492b51b4a17bacea\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+480            android:name="androidx.window.extensions"
+480-->[androidx.window:window:1.0.0-beta04] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\374edff404496382492b51b4a17bacea\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+481            android:required="false" />
+481-->[androidx.window:window:1.0.0-beta04] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\374edff404496382492b51b4a17bacea\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+482        <uses-library
+482-->[androidx.window:window:1.0.0-beta04] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\374edff404496382492b51b4a17bacea\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+483            android:name="androidx.window.sidecar"
+483-->[androidx.window:window:1.0.0-beta04] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\374edff404496382492b51b4a17bacea\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+484            android:required="false" />
+484-->[androidx.window:window:1.0.0-beta04] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\374edff404496382492b51b4a17bacea\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+485
+486        <receiver
+486-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:50:9-61:20
+487            android:name="com.onesignal.FCMBroadcastReceiver"
+487-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:51:13-62
+488            android:exported="true"
+488-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:52:13-36
+489            android:permission="com.google.android.c2dm.permission.SEND" >
+489-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:53:13-73
+490
+491            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+492            <intent-filter android:priority="999" >
+492-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:56:13-60:29
+492-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:56:28-50
+493                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+493-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+493-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+494
+495                <category android:name="com.sensedigital.vamos" />
+495-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:59:17-61
+495-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:59:27-58
+496            </intent-filter>
+497        </receiver>
+498
+499        <service
+499-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:63:9-69:19
+500            android:name="com.onesignal.HmsMessageServiceOneSignal"
+500-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:64:13-68
+501            android:exported="false" >
+501-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:65:13-37
+502            <intent-filter>
+502-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:66:13-68:29
+503                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+503-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:67:17-81
+503-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:67:25-78
+504            </intent-filter>
+505        </service>
+506
+507        <activity
+507-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:71:9-79:20
+508            android:name="com.onesignal.NotificationOpenedActivityHMS"
+508-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:72:13-71
+509            android:exported="true"
+509-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:73:13-36
+510            android:noHistory="true"
+510-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:74:13-37
+511            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+511-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:75:13-72
+512            <intent-filter>
+512-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:76:13-78:29
+513                <action android:name="android.intent.action.VIEW" />
+513-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+513-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+514            </intent-filter>
+515        </activity>
+516
+517        <service
+517-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:81:9-83:40
+518            android:name="com.onesignal.FCMIntentService"
+518-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:82:13-58
+519            android:exported="false" />
+519-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:83:13-37
+520        <service
+520-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:84:9-87:72
+521            android:name="com.onesignal.FCMIntentJobService"
+521-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:85:13-61
+522            android:exported="false"
+522-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:86:13-37
+523            android:permission="android.permission.BIND_JOB_SERVICE" />
+523-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:87:13-69
+524        <service
+524-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:88:9-91:43
+525            android:name="com.onesignal.SyncService"
+525-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:89:13-53
+526            android:exported="false"
+526-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:90:13-37
+527            android:stopWithTask="true" />
+527-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:91:13-40
+528        <service
+528-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:92:9-95:72
+529            android:name="com.onesignal.SyncJobService"
+529-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:93:13-56
+530            android:exported="false"
+530-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:94:13-37
+531            android:permission="android.permission.BIND_JOB_SERVICE" />
+531-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:95:13-69
+532
+533        <activity
+533-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:97:9-100:75
+534            android:name="com.onesignal.PermissionsActivity"
+534-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:98:13-61
+535            android:exported="false"
+535-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:99:13-37
+536            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+536-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:100:13-72
+537
+538        <receiver
+538-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:102:9-104:39
+539            android:name="com.onesignal.NotificationDismissReceiver"
+539-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:103:13-69
+540            android:exported="true" />
+540-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:104:13-36
+541        <receiver
+541-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:105:9-112:20
+542            android:name="com.onesignal.BootUpReceiver"
+542-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:106:13-56
+543            android:exported="true" >
+543-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:107:13-36
+544            <intent-filter>
+544-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:108:13-111:29
+545                <action android:name="android.intent.action.BOOT_COMPLETED" />
+545-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-79
+545-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:25-76
+546                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+546-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:17-82
+546-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:25-79
+547            </intent-filter>
+548        </receiver>
+549        <receiver
+549-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:113:9-119:20
+550            android:name="com.onesignal.UpgradeReceiver"
+550-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:114:13-57
+551            android:exported="true" >
+551-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:115:13-36
+552            <intent-filter>
+552-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:116:13-118:29
+553                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+553-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-84
+553-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-81
+554            </intent-filter>
+555        </receiver>
+556
+557        <activity
+557-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:121:9-127:75
+558            android:name="com.onesignal.NotificationOpenedReceiver"
+558-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:122:13-68
+559            android:excludeFromRecents="true"
+559-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:123:13-46
+560            android:exported="true"
+560-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:124:13-36
+561            android:noHistory="true"
+561-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:125:13-37
+562            android:taskAffinity=""
+562-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:126:13-36
+563            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+563-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:127:13-72
+564        <activity
+564-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:128:9-133:75
+565            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+565-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:129:13-85
+566            android:excludeFromRecents="true"
+566-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:130:13-46
+567            android:exported="true"
+567-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:131:13-36
+568            android:noHistory="true"
+568-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:132:13-37
+569            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+569-->[com.onesignal:OneSignal:4.8.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\104859c76d84f743a78650c1ebb35967\transformed\jetified-OneSignal-4.8.2\AndroidManifest.xml:133:13-72
+570
+571        <receiver
+571-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:44:9-51:20
+572            android:name="com.razorpay.RzpTokenReceiver"
+572-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:45:13-57
+573            android:exported="true" >
+573-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:46:13-36
+574            <intent-filter>
+574-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:48:13-50:29
+575                <action android:name="rzp.device_token.share" />
+575-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:39:13-61
+575-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:39:21-58
+576            </intent-filter>
+577        </receiver>
+578
+579        <activity
+579-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:53:9-61:20
+580            android:name="com.razorpay.CheckoutActivity"
+580-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:54:13-57
+581            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+581-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:55:13-83
+582            android:exported="true"
+582-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:56:13-36
+583            android:theme="@style/CheckoutTheme" >
+583-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:57:13-49
+584            <intent-filter>
+584-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:58:13-60:29
+585                <action android:name="android.intent.action.MAIN" />
+585-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:96:17-69
+585-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:96:25-66
+586            </intent-filter>
+587        </activity>
+588
+589        <meta-data
+589-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:63:9-65:58
+590            android:name="com.razorpay.plugin.googlepay_all"
+590-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:64:13-61
+591            android:value="com.razorpay.RzpGpayMerged" /> <!-- Needs to be explicitly declared on P+ -->
+591-->[com.razorpay:checkout:1.6.29] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1d526ac2a4a7ed7d9174d0aaa05c8449\transformed\jetified-checkout-1.6.29\AndroidManifest.xml:65:13-55
+592        <uses-library
+592-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+593            android:name="org.apache.http.legacy"
+593-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+594            android:required="false" />
+594-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\1e5daafd256097e8bb1eb4535d8ddba8\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+595
+596        <activity
+596-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+597            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+597-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+598            android:excludeFromRecents="true"
+598-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+599            android:exported="false"
+599-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+600            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+600-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+601        <!--
+602            Service handling Google Sign-In user revocation. For apps that do not integrate with
+603            Google Sign-In, this service will never be started.
+604        -->
+605        <service
+605-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+606            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+606-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+607            android:exported="true"
+607-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+608            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+608-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+609            android:visibleToInstantApps="true" />
+609-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3ab6534e1b95c39a74928df9ec832b6\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+610
+611        <receiver
+611-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:31:9-38:20
+612            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+612-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:32:13-78
+613            android:exported="true"
+613-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:33:13-36
+614            android:permission="com.google.android.c2dm.permission.SEND" >
+614-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:34:13-73
+615            <intent-filter>
+615-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+616                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+616-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+616-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+617            </intent-filter>
+618        </receiver>
+619        <!--
+620             FirebaseMessagingService performs security checks at runtime,
+621             but set to not exported to explicitly avoid allowing another app to call it.
+622        -->
+623        <service
+623-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:44:9-51:19
+624            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+624-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:45:13-82
+625            android:directBootAware="true"
+625-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:46:13-43
+626            android:exported="false" >
+626-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8c4c81a110afb23e73b002f7a9ad5bae\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:47:13-37
+627            <intent-filter android:priority="-500" >
+627-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+628                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+628-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+628-->[:firebase_messaging] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+629            </intent-filter>
+630        </service>
+631
+632        <activity
+632-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+633            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+633-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+634            android:excludeFromRecents="true"
+634-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+635            android:exported="true"
+635-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+636            android:launchMode="singleTask"
+636-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+637            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+637-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+638            <intent-filter>
+638-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+639                <action android:name="android.intent.action.VIEW" />
+639-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+639-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+640
+641                <category android:name="android.intent.category.DEFAULT" />
+641-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:17-76
+641-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:27-73
+642                <category android:name="android.intent.category.BROWSABLE" />
+642-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+642-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+643
+644                <data
+645                    android:host="firebase.auth"
+645-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:115:21-52
+646                    android:path="/"
+647                    android:scheme="genericidp" />
+647-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+648            </intent-filter>
+649        </activity>
+650        <activity
+650-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+651            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+651-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+652            android:excludeFromRecents="true"
+652-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+653            android:exported="true"
+653-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+654            android:launchMode="singleTask"
+654-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+655            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+655-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+656            <intent-filter>
+656-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\65540d52879f103b1d09380f12b3e8cb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+657                <action android:name="android.intent.action.VIEW" />
+657-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+657-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+658
+659                <category android:name="android.intent.category.DEFAULT" />
+659-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:17-76
+659-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:27-73
+660                <category android:name="android.intent.category.BROWSABLE" />
+660-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+660-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+661
+662                <data
+663                    android:host="firebase.auth"
+663-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:115:21-52
+664                    android:path="/"
+665                    android:scheme="recaptcha" />
+665-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+666            </intent-filter>
+667        </activity>
+668        <activity
+668-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a0e4d776140c98ce16f13a94423c2dc4\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+669            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+669-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a0e4d776140c98ce16f13a94423c2dc4\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+670            android:exported="false"
+670-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a0e4d776140c98ce16f13a94423c2dc4\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+671            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+671-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a0e4d776140c98ce16f13a94423c2dc4\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+672        <activity
+672-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:23:9-26:66
+673            android:name="com.paytm.pgsdk.PaytmPGActivity"
+673-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:24:13-59
+674            android:screenOrientation="portrait"
+674-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:25:13-49
+675            android:theme="@style/Theme.AppCompat.NoActionBar" />
+675-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:26:13-63
+676        <activity
+676-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:27:9-29:63
+677            android:name="com.paytm.pgsdk.AioMatchUserActivity"
+677-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:28:13-64
+678            android:theme="@style/TransparentActivityTheme" />
+678-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:29:13-60
+679
+680        <service
+680-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:31:9-33:40
+681            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+681-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:32:13-73
+682            android:exported="false" />
+682-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:33:13-37
+683        <service
+683-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:34:9-36:40
+684            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+684-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:35:13-72
+685            android:exported="false" />
+685-->[com.paytm.appinvokesdk:appinvokesdk:1.6.11] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\56c357583c837096a54c9c3f573f718a\transformed\jetified-appinvokesdk-1.6.11\AndroidManifest.xml:36:13-37
+686
+687        <activity
+687-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:34:9-37:66
+688            android:name="com.facebook.FacebookActivity"
+688-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:35:13-57
+689            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+689-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:36:13-96
+690            android:theme="@style/com_facebook_activity_theme" />
+690-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:37:13-63
+691        <activity android:name="com.facebook.CustomTabMainActivity" />
+691-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:38:9-71
+691-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:38:19-68
+692        <activity
+692-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:39:9-53:20
+693            android:name="com.facebook.CustomTabActivity"
+693-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:40:13-58
+694            android:exported="true" >
+694-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:41:13-36
+695            <intent-filter>
+695-->[com.facebook.android:facebook-common:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a3c2b0133eed540fec1855f79f1e8892\transformed\jetified-facebook-common-15.0.2\AndroidManifest.xml:43:13-52:29
+696                <action android:name="android.intent.action.VIEW" />
+696-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:13-65
+696-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:28:21-62
+697
+698                <category android:name="android.intent.category.DEFAULT" />
+698-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:17-76
+698-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:101:27-73
+699                <category android:name="android.intent.category.BROWSABLE" />
+699-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:17-78
+699-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:112:27-75
+700
+701                <data
+702                    android:host="cct.com.sensedigital.vamos"
+702-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:115:21-52
+703                    android:scheme="fbconnect" />
+703-->C:\Users\Jorge Cordoba\Desktop\Vamos original\android\app\src\main\AndroidManifest.xml:29:19-41
+704            </intent-filter>
+705        </activity>
+706
+707        <service
+707-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:14:9-17:72
+708            android:name="easypay.appinvoke.utils.EasyPayConfigDownloader"
+708-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:15:13-75
+709            android:exported="false"
+709-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:16:13-37
+710            android:permission="android.permission.BIND_JOB_SERVICE" />
+710-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:17:13-69
+711        <service
+711-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:18:9-22:72
+712            android:name="easypay.appinvoke.utils.AnalyticsService"
+712-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:19:13-68
+713            android:enabled="true"
+713-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:20:13-35
+714            android:exported="false"
+714-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:21:13-37
+715            android:permission="android.permission.BIND_JOB_SERVICE" />
+715-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:22:13-69
+716
+717        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity" />
+717-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:24:9-90
+717-->[com.paytm.easypay:easypay-appinvoke:1.7.4] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5e73771e0deb04750582a7be0350c8a2\transformed\jetified-easypay-appinvoke-1.7.4\AndroidManifest.xml:24:19-87
+718
+719        <provider
+719-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+720            android:name="com.google.firebase.provider.FirebaseInitProvider"
+720-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+721            android:authorities="com.sensedigital.vamos.firebaseinitprovider"
+721-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+722            android:directBootAware="true"
+722-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+723            android:exported="false"
+723-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+724            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+724-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\7de14b6d64d88c621ea0221c35ca02db\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+725        <activity
+725-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:49:9-53:64
+726            android:name="com.google.android.gms.ads.AdActivity"
+726-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:50:13-65
+727            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+727-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:51:13-122
+728            android:exported="false"
+728-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:52:13-37
+729            android:theme="@android:style/Theme.Translucent" />
+729-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:53:13-61
+730
+731        <provider
+731-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:55:9-59:39
+732            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+732-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:56:13-76
+733            android:authorities="com.sensedigital.vamos.mobileadsinitprovider"
+733-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:57:13-73
+734            android:exported="false"
+734-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:58:13-37
+735            android:initOrder="100" />
+735-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:59:13-36
+736
+737        <service
+737-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:61:9-64:40
+738            android:name="com.google.android.gms.ads.AdService"
+738-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:62:13-64
+739            android:enabled="true"
+739-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:63:13-35
+740            android:exported="false" />
+740-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\a1e0602bd4d0a3611bec961f24a2c005\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:64:13-37
+741
+742        <receiver
+742-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+743            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+743-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+744            android:enabled="true"
+744-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+745            android:exported="false" >
+745-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+746        </receiver>
+747
+748        <service
+748-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+749            android:name="com.google.android.gms.measurement.AppMeasurementService"
+749-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+750            android:enabled="true"
+750-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+751            android:exported="false" />
+751-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+752        <service
+752-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+753            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+753-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+754            android:enabled="true"
+754-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+755            android:exported="false"
+755-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+756            android:permission="android.permission.BIND_JOB_SERVICE" />
+756-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\39964eef831876138410175f4b6568c5\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+757
+758        <meta-data
+758-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\f8bd3ddd68631fae849c4c9b4e9bb2a7\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+759            android:name="com.google.android.gms.version"
+759-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\f8bd3ddd68631fae849c4c9b4e9bb2a7\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+760            android:value="@integer/google_play_services_version" />
+760-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\f8bd3ddd68631fae849c4c9b4e9bb2a7\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+761        <!--
+762         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+763         with the application context. This config is merged in with the host app's manifest,
+764         but there can only be one provider with the same authority activated at any given
+765         point; so if the end user has two or more different apps that use Facebook SDK, only the
+766         first one will be able to use the provider. To work around this problem, we use the
+767         following placeholder in the authority to identify each host application as if it was
+768         a completely different provider.
+769        -->
+770        <provider
+770-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:41:9-44:40
+771            android:name="com.facebook.internal.FacebookInitProvider"
+771-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:42:13-70
+772            android:authorities="com.sensedigital.vamos.FacebookInitProvider"
+772-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:43:13-72
+773            android:exported="false" />
+773-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:44:13-37
+774
+775        <receiver
+775-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:46:9-52:20
+776            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+776-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:47:13-86
+777            android:exported="false" >
+777-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:48:13-37
+778            <intent-filter>
+778-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:49:13-51:29
+779                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+779-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:50:17-95
+779-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:50:25-92
+780            </intent-filter>
+781        </receiver>
+782        <receiver
+782-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:53:9-59:20
+783            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+783-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:54:13-118
+784            android:exported="false" >
+784-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:55:13-37
+785            <intent-filter>
+785-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:56:13-58:29
+786                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+786-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:57:17-103
+786-->[com.facebook.android:facebook-core:15.0.2] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\156d9dbdbfc62f11965ab41c49199a0b\transformed\jetified-facebook-core-15.0.2\AndroidManifest.xml:57:25-100
+787            </intent-filter>
+788        </receiver>
+789
+790        <provider
+790-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+791            android:name="androidx.startup.InitializationProvider"
+791-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+792            android:authorities="com.sensedigital.vamos.androidx-startup"
+792-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+793            android:exported="false" >
+793-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+794            <meta-data
+794-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+795                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+795-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+796                android:value="androidx.startup" />
+796-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\633ba2d48c5fea14590d6f7621e313d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+797            <meta-data
+797-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
+798                android:name="androidx.work.WorkManagerInitializer"
+798-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
+799                android:value="androidx.startup" />
+799-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
+800            <meta-data
+800-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2555c1bfb5a12957431a27feb23dcee3\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+801                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+801-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2555c1bfb5a12957431a27feb23dcee3\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+802                android:value="androidx.startup" />
+802-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2555c1bfb5a12957431a27feb23dcee3\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+803        </provider>
+804
+805        <service
+805-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
+806            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+806-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
+807            android:directBootAware="false"
+807-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
+808            android:enabled="@bool/enable_system_alarm_service_default"
+808-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
+809            android:exported="false" />
+809-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
+810        <service
+810-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
+811            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+811-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
+812            android:directBootAware="false"
+812-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
+813            android:enabled="@bool/enable_system_job_service_default"
+813-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
+814            android:exported="true"
+814-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
+815            android:permission="android.permission.BIND_JOB_SERVICE" />
+815-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
+816        <service
+816-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
+817            android:name="androidx.work.impl.foreground.SystemForegroundService"
+817-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
+818            android:directBootAware="false"
+818-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
+819            android:enabled="@bool/enable_system_foreground_service_default"
+819-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
+820            android:exported="false" />
+820-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
+821
+822        <receiver
+822-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
+823            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+823-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
+824            android:directBootAware="false"
+824-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
+825            android:enabled="true"
+825-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
+826            android:exported="false" />
+826-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
+827        <receiver
+827-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
+828            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+828-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
+829            android:directBootAware="false"
+829-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
+830            android:enabled="false"
+830-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
+831            android:exported="false" >
+831-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
+832            <intent-filter>
+832-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
+833                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+833-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
+833-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
+834                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+834-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
+834-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
+835            </intent-filter>
+836        </receiver>
+837        <receiver
+837-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
+838            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+838-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
+839            android:directBootAware="false"
+839-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
+840            android:enabled="false"
+840-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
+841            android:exported="false" >
+841-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
+842            <intent-filter>
+842-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
+843                <action android:name="android.intent.action.BATTERY_OKAY" />
+843-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
+843-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
+844                <action android:name="android.intent.action.BATTERY_LOW" />
+844-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
+844-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
+845            </intent-filter>
+846        </receiver>
+847        <receiver
+847-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
+848            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+848-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
+849            android:directBootAware="false"
+849-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
+850            android:enabled="false"
+850-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
+851            android:exported="false" >
+851-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
+852            <intent-filter>
+852-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
+853                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+853-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
+853-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
+854                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+854-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
+854-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
+855            </intent-filter>
+856        </receiver>
+857        <receiver
+857-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
+858            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+858-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
+859            android:directBootAware="false"
+859-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
+860            android:enabled="false"
+860-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
+861            android:exported="false" >
+861-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
+862            <intent-filter>
+862-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
+863                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+863-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
+863-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
+864            </intent-filter>
+865        </receiver>
+866        <receiver
+866-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
+867            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+867-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
+868            android:directBootAware="false"
+868-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
+869            android:enabled="false"
+869-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
+870            android:exported="false" >
+870-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
+871            <intent-filter>
+871-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
+872                <action android:name="android.intent.action.BOOT_COMPLETED" />
+872-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-79
+872-->[:flutter_local_notifications] C:\Users\Jorge Cordoba\Desktop\Vamos original\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:25-76
+873                <action android:name="android.intent.action.TIME_SET" />
+873-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
+873-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
+874                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+874-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
+874-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
+875            </intent-filter>
+876        </receiver>
+877        <receiver
+877-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
+878            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+878-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
+879            android:directBootAware="false"
+879-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
+880            android:enabled="@bool/enable_system_alarm_service_default"
+880-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
+881            android:exported="false" >
+881-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
+882            <intent-filter>
+882-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
+883                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+883-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
+883-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
+884            </intent-filter>
+885        </receiver>
+886        <receiver
+886-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
+887            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+887-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
+888            android:directBootAware="false"
+888-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
+889            android:enabled="true"
+889-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
+890            android:exported="true"
+890-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
+891            android:permission="android.permission.DUMP" >
+891-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
+892            <intent-filter>
+892-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
+893                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+893-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
+893-->[androidx.work:work-runtime:2.7.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\2682d305a40b09619a54d8937a6bc95c\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+894            </intent-filter>
+895        </receiver>
+896
+897        <service
+897-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5508e7a495e3df397db7df3907468805\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+898            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+898-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5508e7a495e3df397db7df3907468805\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+899            android:exported="false" >
+899-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5508e7a495e3df397db7df3907468805\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+900            <meta-data
+900-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5508e7a495e3df397db7df3907468805\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+901                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+901-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5508e7a495e3df397db7df3907468805\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+902                android:value="cct" />
+902-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\5508e7a495e3df397db7df3907468805\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+903        </service>
+904        <service
+904-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+905            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+905-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+906            android:exported="false"
+906-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+907            android:permission="android.permission.BIND_JOB_SERVICE" >
+907-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+908        </service>
+909
+910        <receiver
+910-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+911            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+911-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+912            android:exported="false" />
+912-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\673a0217b446f2c821fc175aaf19978f\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+913
+914        <service
+914-->[androidx.room:room-runtime:2.2.5] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\4c4b44d83fcb54fe0a1b4df2321f54b7\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+915            android:name="androidx.room.MultiInstanceInvalidationService"
+915-->[androidx.room:room-runtime:2.2.5] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\4c4b44d83fcb54fe0a1b4df2321f54b7\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+916            android:directBootAware="true"
+916-->[androidx.room:room-runtime:2.2.5] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\4c4b44d83fcb54fe0a1b4df2321f54b7\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+917            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+917-->[androidx.room:room-runtime:2.2.5] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\4c4b44d83fcb54fe0a1b4df2321f54b7\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+918        <activity
+918-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:18:9-24:45
+919            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+919-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:19:13-100
+920            android:enabled="false"
+920-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:20:13-36
+921            android:exported="false"
+921-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:21:13-37
+922            android:launchMode="singleInstance"
+922-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:22:13-48
+923            android:process=":playcore_missing_splits_activity"
+923-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:23:13-64
+924            android:stateNotNeeded="true" />
+924-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:24:13-42
+925        <activity
+925-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:25:9-29:65
+926            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+926-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:26:13-93
+927            android:exported="false"
+927-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:27:13-37
+928            android:stateNotNeeded="true"
+928-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:28:13-42
+929            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+929-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:29:13-62
+930        <service
+930-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:32:9-39:19
+931            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+931-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:33:13-94
+932            android:enabled="false"
+932-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:34:13-36
+933            android:exported="true" >
+933-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:35:13-36
+934            <meta-data
+934-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:36:13-38:41
+935                android:name="com.google.android.play.core.assetpacks.versionCode"
+935-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:37:17-83
+936                android:value="11003" />
+936-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:38:17-38
+937        </service>
+938        <service
+938-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:40:9-43:40
+939            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+939-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
+940            android:enabled="false"
+940-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:42:13-36
+941            android:exported="false" />
+941-->[com.google.android.play:core:1.10.3] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\e28af18176048a0b1a65a4e19f7cb73b\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
+942
+943        <activity
+943-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+944            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+944-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+945            android:clearTaskOnLaunch="true"
+945-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+946            android:screenOrientation="sensorLandscape"
+946-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+947            android:stateNotNeeded="true"
+947-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+948            android:theme="@style/zxing_CaptureTheme"
+948-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+949            android:windowSoftInputMode="stateAlwaysHidden" />
+949-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Jorge Cordoba\.gradle\caches\transforms-3\8578cfe84654f6371cd810670b4cf166\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+950    </application>
+951
+952</manifest>

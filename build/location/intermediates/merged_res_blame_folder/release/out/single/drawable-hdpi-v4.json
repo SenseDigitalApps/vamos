@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f1ee6e261a03cb0dc256ce8cce8b2723\\transformed\\jetified-play-services-base-16.0.1\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\location\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    }
+]

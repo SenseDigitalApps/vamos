@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\sms_autofill\\intermediates\\merged_res\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\sms_autofill\\intermediates\\merged_res\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\sms_autofill\\intermediates\\merged_res\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\color\\common_google_signin_btn_tint.xml"
+    }
+]

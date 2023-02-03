@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\interpolator-v21\\mtrl_linear_out_slow_in.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\interpolator-v21\\mtrl_fast_out_linear_in.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\interpolator-v21\\mtrl_fast_out_slow_in.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
+    }
+]

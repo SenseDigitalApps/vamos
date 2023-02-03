@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-xhdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\drawable-night-v21_background.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\drawable-night-v21\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-mdpi_launcher_icon.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-mdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\drawable-v21_launch_background.xml.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\drawable-night-v21_launch_background.xml.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\drawable-night-v21\\launch_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\drawable-v21_background.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\drawable-v21\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\drawable_ic_stat_onesignal_default.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\drawable\\ic_stat_onesignal_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_launcher_icon.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\app\\intermediates\\merged_res\\debug\\mipmap-hdpi_launcher_icon.png.flat",
+        "source": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\android\\app\\src\\main\\res\\mipmap-hdpi\\launcher_icon.png"
+    }
+]

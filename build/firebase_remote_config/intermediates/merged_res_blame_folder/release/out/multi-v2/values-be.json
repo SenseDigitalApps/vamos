@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\firebase_remote_config\\intermediates\\merged_res\\release\\values-be\\values-be.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f8bd3ddd68631fae849c4c9b4e9bb2a7\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-be\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "141",
+                        "endOffsets": "336"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "145",
+                        "endOffsets": "196"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\values-be\\values-be.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "201",
+                        "endColumns": "100",
+                        "endOffsets": "297"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\firebase_remote_config\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-be\\values-be.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\f8bd3ddd68631fae849c4c9b4e9bb2a7\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-be\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "141",
+                        "endOffsets": "336"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "145",
+                        "endOffsets": "196"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\5cb8da75145cc57c292ee7afd98a938a\\transformed\\core-1.6.0\\res\\values-be\\values-be.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "201",
+                        "endColumns": "100",
+                        "endOffsets": "297"
+                    }
+                }
+            ]
+        }
+    ]
+}

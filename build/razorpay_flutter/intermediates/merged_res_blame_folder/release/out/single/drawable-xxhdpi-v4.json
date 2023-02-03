@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\ic_tick_mark.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1d526ac2a4a7ed7d9174d0aaa05c8449\\transformed\\jetified-checkout-1.6.29\\res\\drawable-xxhdpi-v4\\ic_tick_mark.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\ic_alert.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1d526ac2a4a7ed7d9174d0aaa05c8449\\transformed\\jetified-checkout-1.6.29\\res\\drawable-xxhdpi-v4\\ic_alert.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\rzp_name_logo.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1d526ac2a4a7ed7d9174d0aaa05c8449\\transformed\\jetified-checkout-1.6.29\\res\\drawable-xxhdpi-v4\\rzp_name_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\b86d30d0cc6f76e99a3b9ecd373d441d\\transformed\\jetified-play-services-base-17.5.0\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\razorpay_flutter\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4\\rzp_logo.png",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\1d526ac2a4a7ed7d9174d0aaa05c8449\\transformed\\jetified-checkout-1.6.29\\res\\drawable-xxhdpi-v4\\rzp_logo.png"
+    }
+]

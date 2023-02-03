@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "671750483834",
+    "project_id": "vamos-38fa3",
+    "storage_bucket": "vamos-38fa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671750483834:android:9dd676bd66b978fbd330c3",
+        "android_client_info": {
+          "package_name": "com.sensedigital.vamos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671750483834-a70dv84115fgn7hs1k6umbj7sm89ekmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHoGwLpbI3sc2lL6X02N_R71nVUlK3WZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671750483834-a70dv84115fgn7hs1k6umbj7sm89ekmi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "671750483834-f31ketk0mg31il37ns75hae5l34qersi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ec.vamos.fluxstore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

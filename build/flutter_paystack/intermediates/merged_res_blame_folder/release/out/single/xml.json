@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\xml\\standalone_badge_gravity_bottom_start.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\xml\\standalone_badge_gravity_bottom_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\xml\\standalone_badge_gravity_top_start.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\xml\\standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\xml\\standalone_badge_gravity_bottom_end.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\xml\\standalone_badge_gravity_bottom_end.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\xml\\standalone_badge.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\xml\\standalone_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jorge Cordoba\\Desktop\\Vamos original\\build\\flutter_paystack\\intermediates\\merged_res\\release\\xml\\standalone_badge_offset.xml",
+        "source": "C:\\Users\\Jorge Cordoba\\.gradle\\caches\\transforms-3\\d9b5a2a00ba12369c884bbd189f372c4\\transformed\\material-1.6.0\\res\\xml\\standalone_badge_offset.xml"
+    }
+]
